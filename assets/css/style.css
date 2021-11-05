@@ -4,17 +4,20 @@ html{
 
 body{
     background-color: rgb(250,210,219);
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .nav-color{
     background-color: rgb(98,79,143);
 }
 
-
 .text-color{
     color: rgb(98,79,143);
 }
 
+.btn-outline-info{
+    color: rgb(98,79,143);
+}
 
 hr{
     border-top: 5px solid rgb(223, 197, 224)
@@ -24,9 +27,20 @@ hr{
     background-color: rgb(98,79,143);
     width: 100%;
     padding: 6px 0px;
-
 }
 
 .bg-card{
+    background-color: rgb(223, 197, 224);
+}
+
+.bg-card2{
+    background-color: rgb(98,79,143);
+}
+
+.card-text2{
+    color: rgb(250,210,219);
+}
+
+.btn-back{
     background-color: rgb(223, 197, 224);
 }
