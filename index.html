@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light nav-color">
+    <nav class="navbar navbar-expand-lg navbar-light nav-color fixed-top">
         <div class="container">
            <a class="navbar-brand text-light font-weight-bold" href="#">Tienda Hoop</a>
              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,12 +27,13 @@
               <div class="navbar-nav ml-auto">
                 <a class="nav-link text-light" href="#about">Nosotros</a>
                 <a class="nav-link text-light" href="#productos">Productos</a>
-                <a class="nav-link text-light" href="#contact">Contacto</a>       
+                <a class="nav-link text-light" href="#contact">Contáctanos</a>       
               </div>
             </div>
         </div> 
     </nav>
-
+ 
+<header>
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner mb-2">
           <div class="carousel-item active">
@@ -54,6 +55,7 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+</header>
 
       <section  class="container pt-4 text-center d-none d-sm-block">
           <h3  id="about" class="text-color mb-0 font-weight-bold">¿Quiénes somos?</h3>
@@ -126,12 +128,30 @@
               </button>
             </div>
             <div class="modal-body">
-              <img class="img-fluid my-3" src="assets/img/lana2.jpeg" alt="lanas">
+                <div id="hoopLanas" class="carousel slide carousel-fade" data-ride="carousel">
+                  <div class="carousel-inner img-fluid my-3">
+                    <div class="carousel-item active">
+                      <img src="assets/img/lana1.jpeg" class="d-block w-100" alt="lanas">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/lana2.jpeg" class="d-block w-100" alt="otoñal">
+                    </div>
+                  </div>
+                 <a class="carousel-control-prev" type="button" data-target="#hoopLanas" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                 </a>
+                 <a class="carousel-control-next" type="button" data-target="#hoopLanas" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                 </a>
+                </div>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, sunt. Alias nemo distinctio at accusantium. Odio voluptas, nulla excepturi quas nemo sunt sit totam officiis sed ullam expedita. Ex, dolorem!</p>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, sunt. Alias nemo distinctio at accusantium. Odio voluptas, nulla excepturi quas nemo sunt sit totam officiis sed ullam expedita. Ex, dolorem!</p>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, sunt. Alias nemo distinctio at accusantium. Odio voluptas, nulla excepturi quas nemo sunt sit totam officiis sed ullam expedita. Ex, dolorem!</p>
             </div>
             <div class="modal-footer">
+              <a href="https://tiendahoop.tushop.cl" target="_blank" class="btn btn-back mr-4" data-target="#tradicional">Ver catalogo</a>
               <button type="button" class="btn btn-back" data-dismiss="modal">Volver</button>
             </div>
           </div>
@@ -147,12 +167,30 @@
               </button>
             </div>
             <div class="modal-body">
-              <img class="img-fluid my-3" src="assets/img/producto2.jpeg" alt="kitpro">
+              <div id="hoopKit" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner img-fluid my-3">
+                  <div class="carousel-item active">
+                    <img src="assets/img/kitPro1.jpeg" class="d-block w-100" alt="KitPro1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/kitPro2.jpeg" class="d-block w-100" alt="KitPro2">
+                  </div>
+                </div>
+               <a class="carousel-control-prev" type="button" data-target="#hoopKit" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+               </a>
+               <a class="carousel-control-next" type="button" data-target="#hoopKit" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+               </a>
+              </div>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, sunt. Alias nemo distinctio at accusantium. Odio voluptas, nulla excepturi quas nemo sunt sit totam officiis sed ullam expedita. Ex, dolorem!</p>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, sunt. Alias nemo distinctio at accusantium. Odio voluptas, nulla excepturi quas nemo sunt sit totam officiis sed ullam expedita. Ex, dolorem!</p>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, sunt. Alias nemo distinctio at accusantium. Odio voluptas, nulla excepturi quas nemo sunt sit totam officiis sed ullam expedita. Ex, dolorem!</p>
             </div>
             <div class="modal-footer">
+              <a href="https://tiendahoop.tushop.cl" target="_blank" class="btn btn-back mr-4" data-target="#tradicional">Compra aqui</a>
               <button type="button" class="btn btn-back" data-dismiss="modal">Volver</button>
             </div>
           </div>
@@ -168,12 +206,36 @@
               </button>
             </div>
             <div class="modal-body">
-              <img class="img-fluid my-3" src="assets/img/carrusePequeño1.jpeg" alt="niños">
+                <div id="hoopChicos" class="carousel slide carousel-fade" data-ride="carousel">
+                  <div class="carousel-inner img-fluid my-3">
+                    <div class="carousel-item active">
+                      <img src="assets/img/hoopNinos3.jpeg" class="d-block w-100" alt="modelos">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/hoopNinos4.jpeg" class="d-block w-100" alt="abierto">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/hoopNinos1.jpeg" class="d-block w-100" alt="abstracto">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/hoopNinos2.jpeg" class="d-block w-100" alt="nubes">
+                    </div>
+                  </div>
+                 <a class="carousel-control-prev" type="button" data-target="#hoopChicos" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                 </a>
+                 <a class="carousel-control-next" type="button" data-target="#hoopChicos" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                 </a>
+                </div>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, sunt. Alias nemo distinctio at accusantium. Odio voluptas, nulla excepturi quas nemo sunt sit totam officiis sed ullam expedita. Ex, dolorem!</p>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, sunt. Alias nemo distinctio at accusantium. Odio voluptas, nulla excepturi quas nemo sunt sit totam officiis sed ullam expedita. Ex, dolorem!</p>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, sunt. Alias nemo distinctio at accusantium. Odio voluptas, nulla excepturi quas nemo sunt sit totam officiis sed ullam expedita. Ex, dolorem!</p>
             </div>
             <div class="modal-footer">
+              <a href="https://tiendahoop.tushop.cl" target="_blank" class="btn btn-back mr-4" data-target="#tradicional">Ver catalogo</a>
               <button type="button" class="btn btn-back" data-dismiss="modal">Volver</button>
             </div>
           </div>
@@ -183,18 +245,48 @@
         <div class="modal-dialog">
           <div class="modal-content bg-card2 card-text2">
             <div class="modal-header">
-              <h5 class="modal-title ml-auto font-weight-bold" id="exampleModalLabel">Hoop Tradicional</h5>
+              <h5 class="modal-title ml-auto font-weight-bold" id="exampleModalLabel">Ver catalogo</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              <img class="img-fluid my-3" src="assets/img/hoop1.jpeg" alt="tradicional">
+                <div id="hoopTradicional" class="carousel slide carousel-fade" data-ride="carousel">
+                  <div class="carousel-inner img-fluid my-3">
+                    <div class="carousel-item active">
+                      <img src="assets/img/hoop1.jpeg" class="d-block w-100" alt="modelos">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/hoop2.jpeg" class="d-block w-100" alt="leopardos">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/hoop3.jpeg" class="d-block w-100" alt="rombos">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/hoop4.jpeg" class="d-block w-100" alt="perros">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/hoop5.jpeg" class="d-block w-100" alt="platanos">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/hoop6.jpeg" class="d-block w-100" alt="tropical">
+                    </div>
+                  </div>
+                 <a class="carousel-control-prev" type="button" data-target="#hoopTradicional" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                 </a>
+                 <a class="carousel-control-next" type="button" data-target="#hoopTradicional" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                 </a>
+              </div>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, sunt. Alias nemo distinctio at accusantium. Odio voluptas, nulla excepturi quas nemo sunt sit totam officiis sed ullam expedita. Ex, dolorem!</p>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, sunt. Alias nemo distinctio at accusantium. Odio voluptas, nulla excepturi quas nemo sunt sit totam officiis sed ullam expedita. Ex, dolorem!</p>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, sunt. Alias nemo distinctio at accusantium. Odio voluptas, nulla excepturi quas nemo sunt sit totam officiis sed ullam expedita. Ex, dolorem!</p>
             </div>
             <div class="modal-footer">
+              <a href="https://tiendahoop.tushop.cl" target="_blank" class="btn btn-back mr-4" data-target="#tradicional">Compra aqui</a>
               <button type="button" class="btn btn-back" data-dismiss="modal">Volver</button>
             </div>
           </div>
@@ -214,10 +306,10 @@
           <h3 class="text-center font-weight-bold text-light">Visítanos en:</h3>
         </div>
         <div class="cold-md-6">
-          <a href="https://www.instagram.com/tiendahoop/" target="_blank" class="fab fa-instagram fa-2x text-light ml-4 p2"></a>
-          <a href="https://tiendahoop.tushop.cl" target="_blank" class="fas fa-shopping-basket fa-2x text-light ml-4 p2"></a>
-          <a class="fab fa-youtube fa-2x text-light ml-4 p2"></a>
-          <a class="fab fa-twitter fa-2x text-light ml-4 p2"></a>
+          <a href="https://www.instagram.com/tiendahoop/" target="_blank" class="fab fa-instagram fa-2x text-light ml-4 p2" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Instagram"></a>
+          <a href="https://tiendahoop.tushop.cl" target="_blank" class="fas fa-shopping-basket fa-2x text-light ml-4 p2" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Catalogo"></a>
+          <a class="fab fa-youtube fa-2x text-light ml-4 p2" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Youtube"></a>
+          <a class="fab fa-twitter fa-2x text-light ml-4 p2 data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Twitter"></a>
         </div>
       </div>
     </div>

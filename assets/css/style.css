@@ -5,6 +5,7 @@ html{
 body{
     background-color: rgb(250,210,219);
     font-family: 'Noto Sans', sans-serif;
+    position: relative;
 }
 
 .nav-color{
